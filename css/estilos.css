@@ -1,0 +1,364 @@
+*{ 
+	margin: 0;
+box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;/*desplazamiento*/
+}
+body{ 
+	font-family: sans-serif;
+    /*background-image: url("C:/wamp64/www/Jugos/img/fondoJUGO.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;*/
+    /*background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    background: #ffe259;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.logo{/*tamaño de la imagen*/
+    width: 100%;/*40px;*/
+    height: 100%;/*30px;*/
+}
+.parrafo{
+    width: 85%;
+    margin: auto;
+}
+.contenedor{/*Todos los div*/
+    width: 100%;
+    margin: auto;
+    height: auto;
+    /* top: 60px; */
+}
+
+.contenedor a{
+    text-decoration: none;
+    color: white;
+    /*font-family: "Architects Daughter";*/
+    /*font-family: "Permanent Marker";*/
+    font-family: "Acme";
+    font-size: 20px;
+    /*top: 10px;*/
+    
+}
+
+.contenedor .link_logo{
+    text-decoration: none;
+    color: white;
+    font-family: "Acme";
+    font-size: 20px;
+    /*top: 2px;*/
+    position: relative;
+}
+
+.contenedor .link_logo img{
+    width: 40px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+}
+
+
+
+.header{/*Cabecera */
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(255, 0, 0) ;
+    position: relative;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+.header .contenedor{/*div del header*/
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-evenly; */
+}
+.logo,.icon-menu{/*logo y botoncito del menu*/
+    margin: 5px;
+    color: #fff;
+}
+.icon-menu{/*Botoncito*/
+    display: block;
+    width: 40px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.nav{ 
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    transition: all 0.5s;
+    width: 100%;
+    z-index: 100;
+}
+.menu{/*ul*/
+    list-style: none;
+    padding: 0;margin: 0;  
+    text-align: center;
+}
+.menu__link{/*links <a>*/
+     cursor: pointer; display: block;
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    color: #fff ;
+    height: 60px;
+    /* border-bottom: 1px solid skyblue ; */ /*Bordes*/
+    font-size: 20px;
+	  text-decoration: none;
+}
+.menu__link:hover{/*efecto hover de los links*/
+    background:#037e8c  ;
+    color: #fff;
+}
+.muestrate{/*Clase que se activa al clickear*/
+    left: 0;
+}
+/**/
+section{
+    text-align: center;
+    line-height: 25px;
+    margin: 0px 20px 0px 20px;
+    border-bottom: 10px solid #000;
+    height: 90vh;
+    /*height: auto;*/
+    padding-top: 60px;
+}
+.parrafo__columna h1{
+    font-size: 40px;
+    padding: 20px;
+    /*font-family: "Architects Daughter";*/
+    /*font-family: "Permanent Marker";*/
+    font-family: "Acme";
+}
+
+.parrafo__columna p{
+   text-align: justify;
+   font-size: 20px;
+   /*font-family: "Architects Daughter";*/
+   /*font-family: "Permanent Marker";*/
+   font-family: "Acme";
+
+   justify-content: space-between;
+
+}
+
+.parrafo__columna h2{
+    /*text-align: justify;*/
+    font-size: 30px;
+    /*font-family: "Architects Daughter";*/
+    /*font-family: "Permanent Marker";*/
+    font-family: "Acme";
+    
+ }
+
+.lado{
+   font-size: 20px;
+   font-family: "Acme";
+
+   /*display: inline;*/
+   display: block;
+   width: 50%;
+   float: left;
+   padding: 20px;
+
+   height: auto;
+
+}
+
+.lado img{
+    width: 40%;
+    height: 70%;
+    /*display: flex;*/
+    /*object-fit: cover;*/
+}
+
+/*
+.parrafo__columna .lado{
+    position: relative;
+}
+*/
+
+/*
+
+.caja_imagen{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.caja_imagen .inicio_imagen{
+    width: 30%;
+    position: relative;
+    margin-top: 30px;
+}
+
+.inicio_imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+}
+
+*/
+
+.sec2_1{
+   display: inline; /*flex;*/
+   justify-content: space-between;
+   width: 50%;
+   float: left;
+   padding: 40px;
+   font-size: 20px;
+   font-family: "Acme";
+
+}
+
+.sec2_1 img{
+    width: 40%;
+    height: 70%;
+}
+
+.sec2_2{
+    display: inline; /*flex;*/
+    justify-content: space-between;
+    width: 50%;
+    float: right;
+    padding: 40px;
+    font-size: 20px;
+    font-family: "Acme";
+ }
+
+.sec2_2 img{
+    width: 40%;
+    height: 70%;
+}
+
+
+.imagen_inicio{
+    width: 100%;
+    margin: auto;
+}
+
+
+/*Cambio de tamaño de pantalla*/
+@media(min-width:1024px){
+   .contenedor{
+        width: 1000px;
+    }
+    .nav {
+        position: static;
+        width: auto;
+    }
+    .menu {
+        display: flex;
+    }
+    .icon-menu {
+        display: none;
+    }
+	.menu__link{
+		border: none;
+	}
+
+    
+
+}
+
+@media(min-width:1200px){
+   .contenedor{
+        width: 1200px;
+	}
+}
+
+.producto{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+}
+
+.producto img{
+    width: 20%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.caja_producto{
+    height: 500px;
+    /*bottom: 500px;*/
+    margin: auto;
+    position: relative;
+    overflow: scroll;
+   /*background-color: black;*/
+}
+
+.contenedor2{
+    
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+.contactito{
+    width: 110px;
+    height: 110px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background-color: #001329; /* #333D29;*/ /* #5c4c3d*/
+    color: white;
+    justify-content: space-between;
+    font-family: fantasy;
+    border: solid 1px rgba(65, 64, 64, 0.6);
+    -webkit-box-shadow: 0px 10px 36px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 36px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 36px 0px rgba(0,0,0,0.75);
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    
+}
+
+.caja_iconos{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 120px;
+}
+
+.caja_iconos a{
+    
+    text-decoration: none;
+    color: black;
+    font-family: "Acme";
+    font-size: 30px;
+
+    display: flex;
+    /*align-items: flex-end;*/
+    flex-direction: column;
+
+}
+
+.caja_imagen{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.caja_imagen .inicio_imagen{
+    width: 30%;
+    position: relative;
+    margin-top: 30px;
+}
+
+.inicio_imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+}
